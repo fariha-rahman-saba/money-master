@@ -1,0 +1,8 @@
+body {
+    overflow-x: hidden;
+  }
+
+#title{
+    color: rgb(116, 198, 201);
+    font-weight: 700;
+}
