@@ -15,18 +15,33 @@
 
 <body>
     <header>
-        <h1 class="text-center pt-3 pd-3" id="title">My Money Manager</h1>
+        <h1 class="text-center pt-3 pb-3" id="site-title">My Money Manager <img src="images/money-logo.png" alt=""></h1>
     </header>
 
     <main>
-        <div class="row">
-            <div class="col-md-6 p-5" id="image">
-                <img src="images/money.jpg" alt="" width="600" height="600">
-            </div>
-            <div class="col-md-6 p-5">
-                <p class="title">Income</p>
-                <p>Income:</p>
-                <input type="text">
+        <div class="container">
+            <div class="row row-cols-2 p-5">
+                <div class="col-md-6 col-sm-12" id="image">
+                    <img class="img-fluid" src="images/money.jpg" alt="" width="600" height="600">
+                </div>
+                <div class="col-md-6 col-sm-12" id="manager">
+                    <p class="title">Income</p>
+                    <p>Income: <input type="text"></p>
+                    <p class="title">Expenses</p>
+
+                    <p>Food: <input type="text"></p>
+                    <p>Rent: <input type="text"></p>
+                    <p>Cloth: <input type="text"></p>
+                    <button type="button" class="btn btn-primary ps-5 pe-5">Calculate</button>
+                    <p class="title">Total Expenses: 5500</p>
+                    <p class="title">Balance: 4500</p>
+                    <p>
+                        Save: <input type="text"> % <button type="button"
+                            class="btn btn-primary ps-5 pe-5">Save</button>
+                    </p>
+                    <p class="title">Saving Amount: 2000 </p>
+                    <p class="title">Remaining Balance: 2500 </p>
+                </div>
             </div>
         </div>
     </main>
