@@ -1,3 +1,5 @@
+// get input values
+
 function getInputValue (boxID) {
     let inputBox = document.getElementById(boxID);
     let inputAmount = parseFloat(inputBox.value);
@@ -15,16 +17,7 @@ function getInputValue (boxID) {
 
 }
 
-// function getIncome () {
-//     const income = document.getElementById('incomeField');
-//     const incomeAmount = parseFloat(income.value);
-//     if (isNaN(incomeAmount) || incomeAmount < 0) {
-//         return alert('Please input valid amount of money in number format')
-//     }
-//     return incomeAmount;
-// }
-
-
+// Update balance field
 
 function updateBalance () {
     const income = getInputValue('incomeField');
@@ -38,7 +31,6 @@ function updateBalance () {
         document.getElementById('balance-text').innerHTML = balance;
         document.getElementById('total-expense-text').innerHTML = expenses;
     }
-
 
 }
 
