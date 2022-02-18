@@ -27,7 +27,7 @@ function updateBalance () {
         return alert('Your expense is more than your income');
     }
 
-    else {
+    else if (balance >= 0 && expenses >= 0) {
         document.getElementById('balance-text').innerHTML = balance;
         document.getElementById('total-expense-text').innerHTML = expenses;
     }
