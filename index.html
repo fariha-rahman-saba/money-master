@@ -21,27 +21,27 @@
 
     <main>
         <div class="container">
-            <div class="row row-cols-2 p-5">
-                <div class="col-md-6 col-sm-12" id="image">
+            <div class="row p-5 g-3 ">
+                <div class=".col-sm-12 col-md-6" id="image">
                     <img class="img-fluid" src="images/money.jpg" alt="" width="600" height="600">
                 </div>
-                <div class="col-md-6 col-sm-12" id="manager">
+                <div class=".col-sm-12 col-md-6" id="manager">
                     <p class="title">Income</p>
-                    <p>Income: <input type="text" id="income"></p>
+                    <p>Income: <input type="text" id="incomeField"></p>
                     <p class="title">Expenses</p>
 
                     <p>Food: <input type="text" id="food"></p>
                     <p>Rent: <input type="text" id="rent"></p>
                     <p>Cloth: <input type="text" id="cloth"></p>
                     <button id="calculate-btn" class="btn btn-primary ps-5 pe-5">Calculate</button>
-                    <p class="title">Total Expenses: 5500</p>
-                    <p class="title">Balance: 4500</p>
+                    <p class="title">Total Expenses: <span id="total-expense-text">0</span></p>
+                    <p class="title">Balance: <span id="balance-text">0</span></p>
                     <p>
-                        Save: <input id="save-btn" type="text"> % <button
-                            class="btn btn-primary ps-5 pe-5">Save</button>
+                        Save: <input id="savings-field" type="text"> %
+                        <button id="save-btn" class="btn btn-primary ps-5 pe-5">Save</button>
                     </p>
-                    <p class="title">Saving Amount: 2000 </p>
-                    <p class="title">Remaining Balance: 2500 </p>
+                    <p class="title">Saving Amount: <span id="saving-amount">0</span></p>
+                    <p class="title">Remaining Balance: <span id="remaining-balance">0</span> </p>
                 </div>
             </div>
         </div>
