@@ -4,15 +4,15 @@ function getInputValue (boxID) {
     let inputBox = document.getElementById(boxID);
     let inputAmount = parseFloat(inputBox.value);
     if (isNaN(inputAmount) || inputAmount < 0) {
-        inputBox.value = ''
-        return alert('Please input valid amount of money in number format')
+        inputBox.value = '';
+        return alert('Please input valid amount of money in number format');
     }
     if (boxID == 'incomeField') {
-        return inputAmount
+        return inputAmount;
     }
     else {
-        inputBox.value = ''
-        return inputAmount
+        inputBox.value = '';
+        return inputAmount;
     }
 
 }
@@ -43,7 +43,6 @@ function calculateExpenses () {
 
     const totalExpenses = food + rent + cloth;
 
-
     return totalExpenses;
 
 }
@@ -58,7 +57,8 @@ function calculateSavings () {
     const savings = income * (rate / 100);
 
     const remainingBalance = currentBalanceValue - savings;
-    if (remainingBalance < 0) {
+
+    if (remainingBalance < 0 || savings > income.value) {
         return alert('Your savings can not be more than your current balance');
     }
     else {
@@ -73,7 +73,6 @@ function calculateSavings () {
 
 document.getElementById('calculate-btn').addEventListener('click', function () {
     updateBalance();
-
 })
 
 document.getElementById('save-btn').addEventListener('click', function () {
