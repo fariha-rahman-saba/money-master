@@ -2,12 +2,13 @@ body {
     overflow-x: hidden;
   }
 
+
 #site-title{
     color: rgb(116, 198, 201);
     font-weight: 700;
 }
 
-#manager{
+#calculation-section{
     background-color: rgb(245, 243, 243);
     text-align: center;
 

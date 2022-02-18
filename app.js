@@ -17,7 +17,7 @@ function getInputValue (boxID) {
 
 }
 
-// Update balance field
+// Update balance
 
 function updateBalance () {
     const income = getInputValue('incomeField');
@@ -34,6 +34,7 @@ function updateBalance () {
 
 }
 
+// Calculate total expenses
 
 function calculateExpenses () {
     const food = getInputValue('food');
@@ -47,6 +48,7 @@ function calculateExpenses () {
 
 }
 
+// Calculate Savings
 
 function calculateSavings () {
     const income = getInputValue('incomeField');
@@ -65,6 +67,9 @@ function calculateSavings () {
         document.getElementById('incomeField').value = '';
     }
 }
+
+
+// Onclick Listeners
 
 document.getElementById('calculate-btn').addEventListener('click', function () {
     updateBalance();
